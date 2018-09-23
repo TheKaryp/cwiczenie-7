@@ -25,16 +25,14 @@ main {
     margin-top: 100vh;
     position: relative;
     z-index: 2;
-    
-    
+
 }
 
 header img {
     position: absolute;
     bottom: 0;
     height: 70%;
-    
-    
+
 }
 
 header nav {
@@ -42,7 +40,7 @@ header nav {
     right: 5%;
     top: 1%;
     font-size: 2rem;
-    
+
 }
 
 header hgroup {
@@ -59,7 +57,7 @@ header h1 {
 header h3 {
     font-size: 2rem;
     font-weight: 300;
-    
+
 }
 
 #arrow {
@@ -89,71 +87,49 @@ header h3 {
     background-color: black;
     cursor: pointer;
 }
-        
+
 @media (orientation: portrait) {
     h3 span::after {
         content: '\A';
         white-space: pre;
     }
-    
+
 }
 
 @media (orientation: landscape) {
     header img {
-     
-     height: 65%;
-     right: 41%;
+        height: 65%;
+        right: 41%;
+    }
 }
+
+@media (min-width: 530px) {
+    header h3 {
+        font-size: 12rem;
+    }
+
+    #arrow {
+        width: 94px;
+        height: 94px;
+        font-size: 5rem;
+    }
+
 }
-    
-    @media (min-width: 530px){
-        header h3 {
-            font-size: 12rem; }
-            
-        #arrow {
-    width: 94px;
-    height: 94px;
-    font-size: 5rem;
-        }
-     
-}
-    
-    @media (max-width: 320px) {
-        header h3 {
-            font-size: 2.4rem;
-        }
-    }   
+
+@media (max-width: 320px) {
+    header h3 {
+        font-size: 2.4rem;
+    }
 }
 
 @keyframes arrow {
-    0% { transform: translateY(-80px) }
-    50% {transform: translateY(0px)}
-    100% {transform: translateY(80px)}
+    0% {
+        transform: translateY(-80px)
+    }
+    50% {
+        transform: translateY(0px)
+    }
+    100% {
+        transform: translateY(80px)
+    }
 }
-
-        
-    
-        
-    
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
